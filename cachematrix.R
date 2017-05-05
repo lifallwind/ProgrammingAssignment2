@@ -43,6 +43,6 @@ cacheSolve <- function(x, ...) {
 
 ## Test data
 x <- rbind(c(1, -1/2), c(-1/2, 1)) 
-matrix <- makeVector(x)
-cachemean(matrix)
-cachemean(matrix)
+matrix <- makeCacheMatrix(x)
+cacheSolve(matrix)
+cacheSolve(matrix)
